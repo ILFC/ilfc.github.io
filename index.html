@@ -2,7 +2,10 @@
 layout: default
 ---
 {% assign today = site.time | date: "%Y-%m-%d" %}
-{% assign talks = site.data.talks | sort: "date" %}
+{% comment %} Sort by date, then by start time for sessions on the same day. {% endcomment %}
+{% assign days = site.data.talks | group_by_exp: "t", "t.date | date: '%Y-%m-%d'" | sort: "name" %}
+{% assign talks = "" | split: "" %}
+{% for g in days %}{% assign items = g.items | sort: "time" %}{% for t in items %}{% assign talks = talks | push: t %}{% endfor %}{% endfor %}
 <header class="masthead">
   <div class="wrap">
     <div class="mast-row">

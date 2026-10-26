@@ -717,20 +717,76 @@
     Joint work with Atticus Geiger, Hanson Lu, Noah Goodman, and Thomas Icard.
 
 - date: 2021-06-01
-  time: 10:30-18:30 UTC+2
+  time: 17:30-18:30 UTC+2
+  speakers:
+    - name: "Olga Zamaraeva"
+      affiliation: "University of Washington"
+      local_time: "8:30-9:30 UTC-7"
+  title: "Assembling Syntax: Modeling wh-Questions in a Grammar Engineering Framework"
+  video: https://uqam.ca.panopto.com/Panopto/Pages/Viewer.aspx?id=04a2e8dd-0175-4a47-8c47-ad3c00f12400
+  slides: slides/2021-06-01-zamaraeva.pdf
+  abstract: |
+    Studying syntactic structure is one of the ways to learn about the range variation in human languages. But without computational aid, assembling the complex and fragmented hypotheses about different syntactic phenomena quickly becomes intractable. Fully explicit formalisms like HPSG allow us to encode our hypotheses about syntax and associated compositional semantics on the computer. We can then test these hypotheses rigorously, showing a clear area of their applicability, which can grow over time. In this talk, I will present my recent work on modeling the syntactic structure of constituent (wh-)questions for an HPSG-based grammar engineering framework called the Grammar Matrix. The Matrix includes implemented syntactic analyses which are automatically tested as a system on test suites from diverse languages. The framework helps speed up grammar development and is intended to make implemented grammar artifacts possible for many languages of the world, particularly for endangered languages. In computational linguistics, formalized syntactic representations produced by such grammars play a crucial role in creating annotations which are then used for evaluating NLP system performance. The grammars were also shown to be useful in applications such as grammar coaching, and advancing this line of research can contribute to educational and revitalization efforts.
+
+- date: 2021-06-01
+  time: 16:30-17:30 UTC+2
+  speakers:
+    - name: "Jacob Andreas"
+      affiliation: "MIT"
+      local_time: "10:30-11:30 UTC-4"
+  title: "Language models as world models"
+  video: https://uqam.ca.panopto.com/Panopto/Pages/Viewer.aspx?id=3670c24b-6b2a-4f60-bb52-ad3c00efb809
+  slides: slides/2021-06-01-andreas.pdf
+  abstract: |
+    Neural language models, which place probability distributions over sequences of words, produce vector representations of words and sentences that are useful for language processing tasks as diverse as machine translation, question answering, and image captioning. These models’ usefulness is partially explained by the fact that their representations robustly encode lexical and syntactic information. But the extent to which language model training also induces representations of *meaning* remains a topic of ongoing debate. I will describe recent work showing that language models—trained on text alone, without any kind of grounded supervision—build structured meaning representations that are used to simulate entities and situations as they evolve over the course of a discourse. These representations can be linearly decoded into logical representations of world state (e.g. discourse representation structures). They can also be directly manipulated to produce predictable changes in generated output. Together, these results suggest that (some) highly structured aspects of meaning can be recovered by relatively unstructured models trained on corpus data.
+
+- date: 2021-06-01
+  time: 15:00-16:00 UTC+2
+  speakers:
+    - name: "Marie-Catherine de Marneffe"
+      affiliation: "Ohio State University"
+      local_time: "9:00-10:00 UTC-4"
+  title: "Can neural networks identify speaker commitment?"
+  video: https://uqam.ca.panopto.com/Panopto/Pages/Viewer.aspx?id=14eb4465-72ae-4c38-a066-ad3c00e72973
+  slides: slides/2021-06-01-marneffe.pdf
+  abstract: |
+    When we communicate, we infer a lot beyond the literal meaning of the words we hear or read. In particular, our understanding of an utterance depends on assessing the extent to which the speaker stands by the event they describe. An unadorned declarative like “The cancer has spread” conveys firm speaker commitment of the cancer having spread, whereas “There are some indicators that the cancer has spread” imbues the claim with uncertainty. It is not only the absence vs. presence of embedding material that determines whether or not a speaker is committed to the event described: from (1) we will infer that the speaker is committed to there being war, whereas in (2) we will infer the speaker is committed to relocating species not being a panacea, even though the clauses that describe the events in (1) and (2) are both embedded under “(s)he doesn’t believe”.
+
+    (1) The problem, I’m afraid, with my colleague here, he really doesn’t believe that it’s war.
+
+    (2) Transplanting an ecosystem can be risky, as history shows. Hellmann doesn’t believe that relocating species threatened by climate change is a panacea.
+
+    In this talk, I will present the CommitmentBank, a dataset of naturally occurring discourses developed to deepen our understanding of the factors at play in identifying speaker commitment, both from a theoretical and computational linguistics perspective. I will show that current neural language models fail on items that necessitate pragmatic knowledge, highlighting directions for improvement.
+
+- date: 2021-06-01
+  time: 14:00-15:00 UTC+2
+  speakers:
+    - name: "Maud Pironneau"
+      affiliation: "Druide informatique"
+      local_time: "8:00-9:00 UTC-4"
+  title: "Once Upon a Time, Linguists, Computer Scientists and Disruptive Technologies"
+  slides: slides/2021-06-01-pironneau.pdf
+  abstract: |
+    At Druide informatique, we have been devising writing assistance software for over 25 years. We create writing text correctors, dictionaries, and guides, for everyone and every type of written document, available first in French, and more recently in English. As of 2021, more than 1 million people use Antidote, our flagship product. Consequently, we possess extensive experience in language technologies and we know how to make linguists and computer scientists work together. This knowledge can be seen as both historical and paradigm-shifting: historical in that Antidote for French was created back in 1993, at that time using symbolic rules; paradigm-shifting through the use of disruptive technologies and applications for different languages. Add to this complexity constant societal evolution, a dash of language politics, rational or not, and an inherent linguistic conservatism: now you have a portrait of the important themes in our work. This presentation will expose our successes as well as our failures across this field of possibilities.
+
+- date: 2021-06-01
+  time: 11:30-12:30 UTC+2
+  speakers:
+    - name: "Koji Mineshima"
+      affiliation: "Keio University"
+      local_time: "18:30-19:30 UTC+9"
+  title: "Natural Language Inference: A View from Logic and Formal Semantics"
+  video: https://uqam.ca.panopto.com/Panopto/Pages/Viewer.aspx?id=e2a8713c-465d-4a6f-8899-ad3c00ede24d
+  abstract: |
+    While deep neural networks (DNNs) have shown remarkable performance for a variety of tasks in natural language processing (NLP), there is still much work to be done to understand the extent to which they have the abilities to talk and reason like humans — those abilities that been traditionally described and elucidated in theoretical linguistics and logic. I will present recent work on probing the “systematicity” of DNN models in the domain of Natural Language Inference (NLI), focusing on the transitivity of entailment relations (infer “A to C” from “A to B” and “B to C”), one of the fundamental properties of logical inferences (called the “cut” rule). In particular, it focuses on transitivity inferences composed of veridical inferences (those triggered by clause-embedding verbs), showing that current NLI models lack the generalization capacity to perform well the transitivity inferences. I will also present recent work that tries to fill the gap between NLP and theoretical linguistics (in particular, formal semantics) by developing a semantic parsing and logical inference system based on Categorial Grammar and Automated Theorem Proving and discuss some open problems that arise for logic-based approaches to NLI in the contemporary context.
+
+- date: 2021-06-01
+  time: 10:30-11:30 UTC+2
   speakers:
     - name: "Juan Luis Gastaldi"
       affiliation: "ETH Zürich"
-    - name: "Koji Mineshima"
-      affiliation: "Keio University"
-    - name: "Maud Pironneau"
-      affiliation: "Druide informatique"
-    - name: "Marie-Catherine de Marneffe"
-      affiliation: "Ohio State University"
-    - name: "Jacob Andreas"
-      affiliation: "MIT"
-    - name: "Olga Zamaraeva"
-      affiliation: "University of Washington"
-  title: "ILFC one-day event"
+  title: "What do neural models tell us about the nature of language?"
+  video: https://uqam.ca.panopto.com/Panopto/Pages/Viewer.aspx?id=556f91eb-4d14-47d8-bbc1-ad3c00ea28f6
+  slides: slides/2021-06-01-gastaldi.pdf
   abstract: |
-    A full day of talks that launched the seminar, with six speakers.
+    Recent advances in deep neural networks are having a considerable impact on the practice and methods of linguistics. But to what extent what appears as a mainly technical feat concerns also our understanding of what language is? Although this is chiefly a philosophical question, the way we understand the nature of language can have critical consequences for both the conceptual groundings and the technical developments of the field. Moreover, a clear assessment of this question can provide critical tools against ungrounded claims, as witnessed within the linguistic scientific community by the renewed interest in the relation between linguistic form and meaning. In addition, such a philosophical perspective can be relevant to extend the field’s theoretical capabilities to the study of languages other than natural language. Assuming a philosophical perspective, I will try to identify the philosophical consequences of the recent success of neural computational methods in NLP and suggest possible conceptual and technical orientations for the study of language deriving from them. I will start by discussing the problem of linguistic meaning through a reassessment of the philosophical signification of the so-called “distributional hypothesis”. In particular, against a cognitivist interpretation, I will propose to reconsider it as a weak version of the structuralist hypothesis, where formal and empirical methods do not conflict. Then, I will draw some conceptual implications, namely by proposing the notion of “formal content” to characterize the semantic capabilities of distributional models and highlighting the importance of the explicit derivation of paradigmatic units. Finally, I will suggest how the last decade’s most relevant NLP technical advances can contribute to elaborating an analytic framework in line with the principles exposed.

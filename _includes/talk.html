@@ -1,8 +1,9 @@
 {% assign t = include.talk %}
 {% assign day = t.date | date: "%Y-%m-%d" %}
-<article class="talk{% if include.next %} next{% endif %}" id="{{ day }}" data-date="{{ day }}" data-time="{{ t.time }}">
+{% assign anchor = t.speakers[0].name | slugify: "latin" | prepend: "-" | prepend: day %}
+<article class="talk{% if include.next %} next{% endif %}" id="{{ anchor }}" data-date="{{ day }}" data-time="{{ t.time }}">
   <div class="when">
-    <a class="date" href="#{{ day }}"><time datetime="{{ day }}">{{ day }}</time></a>
+    <a class="date" href="#{{ anchor }}"><time datetime="{{ day }}">{{ day }}</time></a>
     <span class="hour">{{ t.time }}</span>
     <span class="localtime" hidden></span>
   </div>
