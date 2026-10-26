@@ -1,0 +1,32 @@
+{% assign t = include.talk %}
+{% assign day = t.date | date: "%Y-%m-%d" %}
+<article class="talk{% if include.next %} next{% endif %}" id="{{ day }}" data-date="{{ day }}" data-time="{{ t.time }}">
+  <div class="when">
+    <a class="date" href="#{{ day }}"><time datetime="{{ day }}">{{ day }}</time></a>
+    <span class="hour">{{ t.time }}</span>
+    <span class="localtime" hidden></span>
+  </div>
+  <div class="what">
+    {% if include.next %}<p class="label">Next session</p>{% endif %}
+    <p class="speakers">
+      {% for s in t.speakers %}<span class="speaker"><span class="name">{{ s.name }}</span> <span class="aff">{{ s.affiliation }}</span></span>{% endfor %}
+    </p>
+    <h3 class="title">{% if t.title %}{{ t.title }}{% else %}<span class="tba">Title to be announced</span>{% endif %}</h3>
+    {% if t.video or t.slides %}
+    <p class="links">
+      {% if t.video %}<a href="{{ t.video }}">video</a>{% endif %}
+      {% if t.slides %}<a href="{{ t.slides }}">slides</a>{% endif %}
+    </p>
+    {% endif %}
+    {% if t.abstract or t.references %}
+    <details class="abstract"{% if include.open %} open{% endif %}>
+      <summary>Abstract</summary>
+      {{ t.abstract | markdownify }}
+      {% if t.references %}
+      <p class="refs-label">References</p>
+      <ul class="refs">{% for r in t.references %}<li>{{ r }}</li>{% endfor %}</ul>
+      {% endif %}
+    </details>
+    {% endif %}
+  </div>
+</article>

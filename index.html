@@ -1,0 +1,76 @@
+---
+layout: default
+---
+{% assign today = site.time | date: "%Y-%m-%d" %}
+{% assign talks = site.data.talks | sort: "date" %}
+<header class="masthead">
+  <div class="wrap">
+    <div class="mast-row">
+      <h1 class="site-title">ILFC</h1>
+      <div class="mast-side">
+        <p class="fr" lang="fr">Interactions entre Linguistiques Formelles et Computationnelles</p>
+        <p class="en">Formal × computational linguistics</p>
+        <p>Monthly online seminar</p>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="intro-band">
+  <div class="wrap">
+    <div class="intro">
+      <p>The ILFC seminar, organised by RT LIFT2, brings together researchers from formal and computational linguistics, across the communities and around the world, to share their perspectives. It takes place once a month, online, from 16:30 to 17:30 Paris time. Attendance is free.</p>
+      <p class="cta"><a class="button" href="{{ site.mailing_list }}">Join the mailing list</a> <span>to get the Zoom link and announcements.</span></p>
+    </div>
+  </div>
+</div>
+
+<main class="wrap">
+  <section id="upcoming" aria-labelledby="upcoming-h">
+    <h2 id="upcoming-h">Upcoming sessions</h2>
+    <p class="note">Times are given in Paris time (<abbr title="Central European Time">UTC+1</abbr> in winter, UTC+2 in summer).</p>
+    <div class="talks" id="upcoming-list">
+      {% assign first = true %}
+      {% for t in talks %}{% assign day = t.date | date: "%Y-%m-%d" %}{% if day >= today %}
+        {% include talk.html talk=t open=true next=first %}
+        {% assign first = false %}
+      {% endif %}{% endfor %}
+    </div>
+    <p class="empty" id="upcoming-empty"{% unless first %} hidden{% endunless %}>The next sessions will be announced soon on the mailing list.</p>
+  </section>
+
+  <section id="past" aria-labelledby="past-h">
+    <div class="past-head">
+      <h2 id="past-h">Past sessions</h2>
+      <label class="search"><span class="visually-hidden">Search past sessions</span><input id="search" type="search" placeholder="Search speakers, titles, abstracts"></label>
+    </div>
+    <div id="past-list">
+      {% assign season = "" %}
+      {% assign past = talks | reverse %}
+      {% for t in past %}{% assign day = t.date | date: "%Y-%m-%d" %}{% if day < today %}
+        {% assign y = t.date | date: "%Y" | plus: 0 %}{% assign m = t.date | date: "%-m" | plus: 0 %}
+        {% if m < 8 %}{% assign y = y | minus: 1 %}{% endif %}
+        {% assign s = y | append: "" %}
+        {% if s != season %}
+          {% unless season == "" %}</div></div>{% endunless %}
+          {% assign season = s %}
+          <div class="season" data-season="{{ y }}"><h3 class="season-h">{{ y }}–{{ y | plus: 1 }}</h3><div class="talks">
+        {% endif %}
+        {% include talk.html talk=t %}
+      {% endif %}{% endfor %}
+      {% unless season == "" %}</div></div>{% endunless %}
+    </div>
+    <p class="empty" id="search-empty" hidden>No past session matches this search.</p>
+  </section>
+
+  <section id="about" aria-labelledby="about-h">
+    <h2 id="about-h">About</h2>
+    <p>The seminar is organised by the thematic network <strong>RT LIFT2</strong> (Linguistique informatique, formelle et de terrain), previously the <span lang="fr">GdR</span> LIFT. It started in 2021 and has welcomed speakers from linguistics, natural language processing and cognitive science.</p>
+    <p>Organisers:
+      {% for o in site.organisers %}{{ o.name }} (<span class="email">{{ o.email }}</span>){% unless forloop.last %} and {% endunless %}{% endfor %}.
+    </p>
+  </section>
+</main>
+
+<footer class="wrap footer">
+  <p>ILFC seminar · RT LIFT2 · <a href="#upcoming">Upcoming</a> · <a href="#past">Past sessions</a> · <a href="{{ site.mailing_list }}">Mailing list</a></p>
+</footer>

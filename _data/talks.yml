@@ -1,0 +1,736 @@
+# All the sessions of the ILFC seminar.
+#
+# To add a session, copy the template below to the top of the list and fill it in.
+# The order of the entries does not matter: the website sorts them by date and
+# decides by itself which sessions are upcoming and which are past.
+#
+# - date: 2027-03-11               # YYYY-MM-DD
+#   time: 16:30-17:30 UTC+1        # Paris time: UTC+1 in winter, UTC+2 in summer
+#   speakers:
+#     - name: "Firstname Lastname"
+#       affiliation: "University"
+#   title: "Title of the talk"     # leave empty while unknown: shown as "Title to be announced"
+#   video: https://...             # optional
+#   slides: slides/2027-03-11-lastname.pdf   # optional: put the PDF in the slides/ folder
+#   abstract: |                    # optional; indent every line by 4 spaces
+#     First paragraph (Markdown is allowed: *italics*, **bold**, [links](https://...)).
+#
+#     Second paragraph, after an empty line.
+#   references:                    # optional
+#     - "Author, Title, Venue, Year"
+#
+# Write titles between double quotes; a double quote inside them must be written \".
+# More examples and help in README.md.
+
+- date: 2027-02-11
+  time: 16:30-17:30 UTC+1
+  speakers:
+    - name: "James Pustejovsky"
+      affiliation: "Brandeis University"
+  title:
+  abstract:
+
+- date: 2027-01-14
+  time: 16:30-17:30 UTC+1
+  speakers:
+    - name: "Sina Zarrieß"
+      affiliation: "University of Bielefeld"
+  title:
+  abstract:
+
+- date: 2026-12-10
+  time: 16:30-17:30 UTC+1
+  speakers:
+    - name: "Jonathan Ginzburg"
+      affiliation: "Université Paris Cité"
+  title:
+  abstract:
+
+- date: 2026-11-12
+  time: 16:30-17:30 UTC+1
+  speakers:
+    - name: "Su Lin Blodgett"
+      affiliation: "Mila"
+  title:
+  abstract:
+
+- date: 2026-10-15
+  time: 16:30-17:30 UTC+2
+  speakers:
+    - name: "Robin Ryder"
+      affiliation: "Imperial College London"
+  title: "Bayesian methods for inferring the history of languages"
+  abstract: |
+    Languages change through time in a manner comparable to biological evolution. Models have been developed for many aspects of human languages, including vocabulary, syntax and phonology. The complexity of these models, as well as the nature of the questions of interest, make the Bayesian framework quite natural in this setting, which explains why much of the research in Statistics applied to Historical Linguistics uses Bayesian methods. I shall present an overview of various models, starting with Morris Swadesh’s failed attempts at glottochronology in the 1950s, then looking at some models developed in the last two decades. I shall go into more detail for a model of so-called “core” lexical data by a stochastic process on a phylogenetic tree, with an initial focus on the Sino-Tibetan family of languages and on the issue of dating the most recent common ancestor to these languages. This will allow me to discuss issues of model robustness and validation. I shall conclude with some recent work about joint estimation of lexical and phonological changes through a model of random discrete matrices, and its application to the history of sign languages. If time allows, I will also discuss ongoing work on the theoretical limits of phylolinguistics.
+
+- date: 2026-09-10
+  time: 16:30-17:30 UTC+2
+  speakers:
+    - name: "Leonie Weißweiler"
+      affiliation: "Leipzig University"
+  title: "Expanding the Linguistic Evaluation of Language Models, or: What to do now that LMs are good"
+  abstract: |
+    Linguistically motivated benchmarks of language models have been concerned with formalising a specific property of human language, developing a benchmark based on this formalisation, and then evaluating a language model to determine if it has learned this linguistic property. In this talk, I argue that for English, and for regular and frequent phenomena, language models have learned the phenomena with more nuance than the benchmarks can measure. This should have consequences for how we interpret their performance on these benchmarks, but more importantly, it opens up interesting new directions. We can extend linguistic evaluation to rare, irregular phenomena and low-resource languages, but also place an increased focus on linguistic interpretability with a view towards comparing their learning behaviour to competing linguistic theories, and suggesting expansions to those theories by using LMs as simulation models. I will share examples and insights from recent work in this direction, monolingually for the paired-focus and caused-motion constructions, as well as multilingually for subject-verb agreement and word order, and formulate what I think will be important directions in this area going forward.
+
+- date: 2026-06-19
+  time: 16:30-17:30 UTC+2
+  speakers:
+    - name: "Abdellah Fourtassi"
+      affiliation: "Aix Marseille Université"
+  title: "Which Forms of Caregiver Feedback Support Grammar Learning? A Reinforcement-Learning Study of Child-Like Language Models"
+  abstract: |
+    Social interaction is central to children’s language learning, but the effects of different forms of caregiver feedback are difficult to isolate in naturalistic data.
+
+    We use child-like language models as controlled learners to test which forms of feedback support grammatical development. Small GPT-2-style models are pretrained on child-directed language from CHILDES, then fine-tuned with reinforcement learning using reward models trained to capture four feedback types: communicative feedback, structural alignment, semantic contingency, and affective feedback. Reward fine-tuning yields limited gains on minimal-pair evaluations, but clearer effects in free generation. Structural alignment produces the strongest improvements in grammaticality, providing a novel, plausible mechanistic account of how this feedback can support grammar learning. Communicative feedback yields more moderate gains. In contrast, semantic contingency and affective feedback do not improve grammaticality, although further analyses suggest that they may support other aspects of language learning beyond grammar.
+
+- date: 2026-05-13
+  time: 16:30-17:30 UTC+2
+  speakers:
+    - name: "Jennifer Hu"
+      affiliation: "Johns Hopkins University"
+  title: "How to Know What Language Models Know"
+  abstract: |
+    As language models (LMs) become more sophisticated, there is growing interest in their cognitive abilities such as reasoning or grammatical generalization. However, we only have access to evaluations, which can only indirectly measure these latent constructs. In this talk, I take inspiration from the concept of “task demands” in cognitive science to design and understand LM evaluations. I will first describe how task demands can affect LMs’ behaviors. I will then present case studies showing how evaluations with different task demands can lead to vastly different conclusions about LMs’ abilities. Specifically, prompt-based evaluations (e.g., “Is the following sentence grammatical? [sentence]“) yield systematically lower performance than string probability comparisons, and smaller LMs are more sensitive to task demands than LMs with more parameters or training, mirroring findings in developmental psychology. Finally, I briefly outline a theoretical framework for using string probability to reveal grammaticality. These results underscore the importance of specifying the assumptions behind our evaluation design choices before we draw conclusions about LMs’ capabilities.
+
+- date: 2026-04-16
+  time: 16:30-17:30 UTC+2
+  speakers:
+    - name: "Shu Okabe"
+      affiliation: "Technische Universität München"
+  title: "NLP Models for Field Linguistic Annotations in Computational Language Documentation"
+  abstract: |
+    More than half of the languages spoken today are considered to be endangered and may disappear by the end of the century. In this context, language documentation is a field of linguistics dedicated to the recording, annotation, and archival of language data. Since such annotations are primarily manual and require expert knowledge and time, computational language documentation aims to develop tools to assist linguists in several documentation steps using Natural Language Processing approaches. This presentation will focus on two of the tasks: (i) word segmentation to identify word boundaries in an unsegmented transcription of a recorded sentence and (ii) automatic interlinear glossing to predict linguistic annotations (glosses) for each word.
+
+    
+
+    For the first task, we improve the performance of the Bayesian non-parametric models used until now through weak supervision, leveraging realistically available resources during documentation. We tackle the second task using a statistical sequence-labelling method that proved to be competitive with neural models.
+
+- date: 2026-04-02
+  time: 16:30-17:30 UTC+2
+  speakers:
+    - name: "Adele Goldberg"
+      affiliation: "Princeton University"
+  title: "How humans and LLMs combine constructions"
+  video: https://uqam.ca.panopto.com/Panopto/Pages/Viewer.aspx?id=9aa57331-1106-4bae-b270-b42600d747d0
+  slides: slides/2026-04-02-goldberg.pdf
+  abstract: |
+    Constructions are learned pairings of form and function that vary in complexity, abstraction, and discourse function. Because they are numerous, interrelated, and context-dependent, speakers must routinely create and interpret novel combinations of constructions in real time. I present evidence that large language models (LLMs) mirror human-like formal and semantic judgments, making LLMs the best formalism around for capturing human’s remarkable language skill.
+
+- date: 2026-02-12
+  time: 16:30-17:30 UTC+1
+  speakers:
+    - name: "Jaap Jumelet"
+      affiliation: "University of Groningen"
+  title: "Multilingual Linguistic Evaluation of Large Language Models"
+  video: https://uqam.ca.panopto.com/Panopto/Pages/Viewer.aspx?id=c3f67ec0-89e6-4387-b7b7-b3ef011d9aed
+  # slides: lost (the archived copy of https://gdr-lift.loria.fr/wp-content/uploads/2026/02/Jumelet-MultiBLiMP-ILFC.pdf is incomplete)
+  abstract: |
+    In this talk I will describe our efforts in setting up evaluation of linguistic abilities of LLMs at a massively multilingual scale. We recently released MultiBLiMP 1.0, a massively multilingual benchmark of linguistic minimal pairs, covering 101 languages and 2 types of subject-verb agreement, containing more than 128,000 minimal pairs. Our minimal pairs are created using a fully automated pipeline, leveraging the large-scale linguistic resources of Universal Dependencies and UniMorph. MultiBLiMP evaluates abilities of LLMs at an unprecedented multilingual scale, and highlights the shortcomings of the current state-of-the-art in modelling low-resource languages. In the talk I will describe our approach and findings, our ideas for extending MultiBLiMP, and reflect on the role that linguistic structure and annotation can still play in the age of LLMs.
+
+- date: 2026-01-22
+  time: 16:30-17:30 UTC+1
+  speakers:
+    - name: "Gemma Boleda"
+      affiliation: "Universitat Pompeu Fabra, ICREA"
+  title: "LLMs as a synthesis between symbolic and distributed approaches to language"
+  video: https://uqam.ca.panopto.com/Panopto/Pages/Viewer.aspx?id=71be6354-7159-4df7-ba38-b3db00ed28d2
+  # slides: lost (the archived copy of https://gdr-lift.loria.fr/wp-content/uploads/2026/01/ilfc-gboleda.pdf is incomplete)
+  abstract: |
+    Since the middle of the 20th century, a fierce battle is being fought between symbolic and distributed approaches to language and cognition. In this talk, I reflect on deep learning models of language in the context of this broader discussion, and argue that LLMs represent a synthesis between the two antagonistic traditions. This is because deep learning architectures allow for both distributed/continuous/fuzzy and symbolic/discrete/categorical-like representations and processing, and, crucially, models trained on language make use of this flexibility. In particular, I will discuss recent research in interpretability that suggests that grammar is processed in a near-symbolic fashion, while lexical semantics receives a much more distributed treatment; and I will also discuss work in progress in our group that poses some challenges to this view. I will end the talk by summarizing a recent systematic review of interpretability work on syntactic knowledge in LLMs.
+
+- date: 2025-12-17
+  time: 16:30-17:30 UTC+1
+  speakers:
+    - name: "Ethan Wilcox"
+      affiliation: "Georgetown University"
+  title: "Going Beyond “Humanlike”: Using LLMs to advance psycholinguistic theories"
+  video: https://uqam.ca.panopto.com/Panopto/Pages/Viewer.aspx?id=3c15247b-4709-498a-a758-b3b700e8930f
+  # slides: lost (the archived copy of https://gdr-lift.loria.fr/wp-content/uploads/2025/12/Wilcox_ILFC_seminar.pdf is incomplete)
+  abstract: |
+    Many recent contributions seek to quantify how “humanlike” LLMs are with respect to human linguistic behavior. But going beyond descriptive comparison, how can LLMs advance our (psycho) linguistic theories? I argue that important contributions can be made by using LLMs to refine and test theories of language processing, in particular, information-based theories that ground their predictions in word-level probabilities. I discuss two representative cases from my own recent research. In the first part of the talk, I focus on surprisal theory, which proposes that incremental processing difficulty is a function of word-level information content, or surprisal. I demonstrate that surprisal estimates from LLMs are predictive of word-by-word reading times for eleven languages across five different language families. But LLMs also reveal the limits of surprisal theory; the variance explained by their estimates in reading data is relatively low, and they do not predict reading times for ungrammatical sentences. In the second part of the talk, I turn to regressions, or backwards eye movements during reading. I argue that previous theories of regressions make differing predictions about the expected statistical dependence between words implicated in the regression. I operationalize this statistical dependence as pointwise mutual information (PMI), and show that it can be estimated using LLMs. In multiple corpora of reading data, I find that regressions occur more frequently between words with high estimates of PMI. These results suggest that regressions are confirmatory in nature, an idea which has been overlooked in much of the previous literature on this topic. I conclude that LLMs offer a new affordance in the research environment, but that we should be careful to ensure that LLM-based research serves the larger goal of advancing psycholinguistic theory.
+
+- date: 2025-11-24
+  time: 16:30-17:30 UTC+1
+  speakers:
+    - name: "Ece Takmaz"
+      affiliation: "Utrecht University"
+  title: "Scene Context, Object Reference, and Image Memorability: Insights into Visuo-Linguistic Processing in Humans and Models"
+  video: https://uqam.ca.panopto.com/Panopto/Pages/Viewer.aspx?id=52793c7f-0a6d-4418-87b0-b3a00051f638
+  # slides: lost (the archived copy of https://gdr-lift.loria.fr/wp-content/uploads/2025/11/Ece-Takmaz-ILFC-talk-Scene-Context-Object-Reference-and-Image-Memorability_-Insights-into-Visuo-Linguistic-Processing-in-Humans-and-Models.pdf is incomplete)
+  abstract: |
+    Natural scenes provide us with rich contexts for object recognition and reference. In particular, knowing what type of scene one is looking at generates expectations about which objects will occur where. Do Vision-Language Models (VLMs) learn to rely on scene contexts in a similar way, when generating references to objects? In the first part of this talk, I will introduce the Common Objects Out-of-Context (COOCO) dataset that we created to test to what extent VLMs rely on scene context while referring to objects under different degrees of scene-object congruency and different perturbations. Our findings show that models leverage scene context adaptively, dynamically balancing local and contextual information for reference generation. In the second part, I will talk about how scenes vary in how memorable they are to humans. Inspired by findings from cognitive science and computer vision, we explored correlates of image memorability in pretrained vision encoders, investigating activations, attention distributions, and the uniformity of image patches. I will especially focus on sparse autoencoder loss of reconstructing a scene as a strong proxy for memorability. Collectively, our findings reveal interesting parallels between models’ adaptive use of scene context and internal encoding of signals for memorability, and human visuo-linguistic processing.
+
+- date: 2025-10-15
+  time: 16:30-17:30 UTC+2
+  speakers:
+    - name: "Noga Zaslavsky"
+      affiliation: "New York University"
+  title: "Cultural evolution of efficient semantic systems in humans and AI"
+  abstract: |
+    Human languages efficiently compress meanings into words, but how did our semantic systems evolve to be that way? Are AI systems capable of evolving efficient semantic systems and representing meaning as we do? In this talk, I address these open questions from cognitive, cultural, and computational perspectives. First, I show that individual human learners favor efficiently compressed semantic representations. This inductive learning bias, when amplified via cultural transmission, drives the evolution of near-optimally efficient semantic systems. Second, I consider large language models (LLMs) and show that while they vary widely in their semantic alignment with humans, they nevertheless exhibit a similar tendency toward efficient compression: when simulating cultural evolution with LLMs, they iteratively restructure initially random semantic systems towards greater efficiency. Finally, I show that introducing an explicit pressure for efficient compression, grounded in the information bottleneck principle, enables multi-agent reinforcement learning systems to evolve efficient, human-like semantic systems without any human supervision. Taken together, these results demonstrate how humans and AI can evolve efficient semantic systems through social interaction and cultural transmission, and more broadly, they suggest that efficient compression may be a fundamental principle of intelligence.
+
+- date: 2025-09-17
+  time: 16:30-17:30 UTC+2
+  speakers:
+    - name: "Timothee Mickus"
+      affiliation: "University of Helsinki"
+  title: "GPT stands for ‘General Problem of Truthfulness’"
+  video: https://uqam.ca.panopto.com/Panopto/Pages/Viewer.aspx?id=fb66215d-d6de-44a2-afa7-b35c00f497a9
+  # slides: lost (the archived copy of https://gdr-lift.loria.fr/wp-content/uploads/2025/09/GPT-stands-for-General-problem-of-truthfulness.pdf is incomplete)
+  abstract: |
+    It is something of a trope to state that neural NLP has a problem of truthfulness. Hallucinations, for instance, are a problem so widespread in LLM technology that commercial providers often include disclaimers as to the truthfulness of what their systems can output. We often assume that such models, because they are derived from distributional data, have at best a loose relationship with truth.
+
+    
+
+    The purpose of this talk is to bring some nuance to this perspective, highlight some potential root causes, and push back on some common misconceptions. The overall argument I will outline is that this ‘problem of truthfulness’ is more pervasive than we might think if we focus solely on hallucinations. While hallucinations are easy to come by, we can also highlight that annotators often do not agree as to what counts as a hallucination — and models routinely struggle with human label variation. Conversely, it is often possible for models to rely on compositional patterns in linguistic data to produce outputs that are factually correct. In fact, LLMs can learn to encode numeric information with surprisingly high accuracy, or even be biased towards producing the expect true answer. In many instances, tackling this problem of truthfulness requires rethinking where the field of NLP is at: how do we train models that capture linguistic ambiguity? What are our metrics actually sensitive to? What counts as a true label?
+
+- date: 2025-06-11
+  time: 16:30-17:30 UTC+2
+  speakers:
+    - name: "Tom McCoy"
+      affiliation: "Yale University"
+  title: "Bridging the divide between linguistics and natural language processing: From vectors to symbols and back again"
+  video: https://uqam.ca.panopto.com/Panopto/Pages/Viewer.aspx?id=8d732d04-a275-4382-a0e5-b2fb00e6d2b7
+  # slides: lost (the archived copy of https://gdr-lift.loria.fr/wp-content/uploads/2025/06/mccoy_ilfc_11june2025_v2.pdf is incomplete)
+  abstract: |
+    Capturing the structure of language is a central goal in both linguistics and natural language processing (NLP). Despite this overlap in goals, linguistics and NLP differ substantially in how they handle language. Linguistic theories typically assume a symbolic view, in which discrete units (e.g., words) are combined in structured ways (e.g., in syntax trees). In NLP, however, the most successful systems are neural networks, which encode information in continuous vectors that do not appear to have any of the rich structure posited in linguistics. In this talk, I will discuss two lines of work that show how vectors and symbols may not be as incompatible as they seem. First, I will present analyses of how standard neural networks represent syntactic structure, with the conclusion that, in at least many cases, these models build implicit symbolic representations. Thus, despite appearances, they may not be incompatible with symbolic views of language. Second, I will turn from representations to learning by showing how neural networks can realize strong, structured learning biases of the sort traditionally seen only in symbolic models; the experiments in this part of the talk are made possible by recent advances in meta-learning. Taken together, these results provide some first steps toward bridging the divide between vectors and symbols.
+
+- date: 2025-05-14
+  time: 16:30-17:30 UTC+2
+  speakers:
+    - name: "Raffaella Bernardi"
+      affiliation: "Free University of Bozen Bolzano"
+  title: "The interplay between language and reasoning"
+  video: https://uqam.ca.panopto.com/Panopto/Pages/Viewer.aspx?id=4aaf1b83-602d-4ed0-92fd-b2dd010eac5b
+  # slides: lost (the archived copy of https://gdr-lift.loria.fr/wp-content/uploads/2025/05/bernardi_iflc25.pdf is incomplete)
+  abstract: |
+    Large Language Models, and ChatGPT in particular, have grabbed the attention of the computational linguistics community and the media. Having reached high language proficiency, attention has been shifting toward their reasoning capabilities. It has been shown that they can carry out deductive reasoning steps: they draw inferences from a series of given facts. In this talk, I will argue for the need of models whose language generation is driven by an implicit reasoning process and a communication goal. To support my claim, I will present two papers recently produced within my group: one evaluates LLMs’ formal reasoning skills and the other focuses on LLMs’ information-seeking strategies; to this end, we take syllogisms and the 20-Questions game as test beds. These tasks have been used extensively in cognitive sciences to study human reasoning skills, hence they provide us with a variety of experiments to inspect the language and reasoning interplay in LLMs.
+  references:
+    - "Leonardo Bertolazzi, Albert Gatt, Raffaella Bernardi, A Systematic Analysis of Large Language Models as Soft Reasoners: The Case of Syllogistic Inferences, EMNLP 2024 (https://aclanthology.org/2024.emnlp-main.769/)"
+    - "Davide Mazzaccara, Alberto Testoni, Raffaella Bernardi, Learning to Ask Informative Questions: Enhancing LLMs with Preference Optimization and Expected Information Gain, EMNLP 2024 (https://aclanthology.org/2024.findings-emnlp.291/)"
+
+- date: 2025-04-16
+  time: 16:30-17:30 UTC+2
+  speakers:
+    - name: "Sacha Beniamine"
+      affiliation: "University of Surrey"
+      local_time: "15:30-16:30 UTC+1"
+  title: "Computational morphology needs better lexical data"
+  slides: slides/2025-04-16-beniamine.pdf
+  abstract: |
+    Rich resources are key to support comparative studies in computational linguistics. Yet existing datasets face a number of issues, among which problems of:
+
+    
+
+    – coverage: current resources document only a small proportion of the worlds languages
+
+    
+
+    – commensurability: it is rarely straightforward to compare resources
+
+    
+
+    – consistent presentation: many datasets fall short of machine readability due to small variations in coding
+
+    
+
+    – durability: project funding is temporary and data maintenance beyond their term is rarely ensured
+
+    
+
+    – technical skills: good data management require technical skills which are rarely taught to linguists.
+
+    
+
+    I illustrate this potential and these issues on the case of inflected resources for quantitative morphology. I outline a path to improvement through standardisation (specifically the Paralex standard: http://www.paralex-standard.org) and large scale international coordination.
+
+- date: 2025-03-19
+  time: 16:30-17:30 UTC+1
+  speakers:
+    - name: "Gail Weiss"
+      affiliation: "EPFL"
+  title: "Thinking Like Transformers – A Practical Session"
+  video: https://uqam.ca.panopto.com/Panopto/Pages/Viewer.aspx?id=560c518f-d1a6-4cfa-abbd-b2a600e6fab8
+  slides: slides/2025-03-19-weiss.pdf
+  abstract: |
+    With the help of the RASP programming language, we can better imagine how transformers–the powerful attention based sequence processing architecture–solve certain tasks. Some tasks, such as simply repeating or reversing an input sequence, have reasonably straightforward solutions, but many others are more difficult. To unlock a fuller intuition of what can and cannot be achieved with transformers, we must understand not just the RASP operations but also how to use them effectively.
+
+    
+
+    In this session, I would like to discuss some useful tricks with you in more detail. How is the powerful selector_width operation yielded from the true RASP operations? How can a fixed-depth RASP program perform arbitrary length long-addition, despite the equally large number of potential carry operations such a computation entails? How might a transformer perform in-context reasoning? And are any of these solutions reasonable, i.e., realisable in practice?
+
+    
+
+    I will begin with a brief introduction of the base RASP operations to ground our discussion, and then walk us through several interesting task solutions. Following this, and armed with this deeper intuition of how transformers solve several tasks, we will conclude with a discussion of what this implies for how knowledge and computations must spread out in transformer layers and embeddings in practice.
+
+- date: 2025-02-12
+  time: 16:30-17:30 UTC+1
+  speakers:
+    - name: "Miloš Stanojević"
+      affiliation: "University College London"
+      local_time: "15:30-16:30 UTC+0"
+  title: "Linguistic Universals in Grammars and Language Models"
+  video: https://uqam.ca.panopto.com/Panopto/Pages/Viewer.aspx?id=d47fe7a2-4227-4bac-9644-b282015c5dea
+  slides: slides/2025-02-12-stanojevic.pdf
+  abstract: |
+    The shared universal properties of human languages have been at the heart of many linguistic debates for decades. A big part of these debates are two core questions: (1) learnability — can all linguistic universals be learned from data alone without any inbuilt prior knowledge, and (2) explanation — why do we see these universals and not some other?
+
+    
+
+    In the first part of the talk, I will show recent results on how LLMs fare in picking up a syntactic universal in the idealized scenario where LLM is trained on large amounts of data that comes from a large number of languages. As usual, the number of parameters and amount of data helps but does not fully solve the learnability problem. Even if LLMs could learn a syntactic universal, their performance alone would not help in explaining why the observed syntactic universal exists at the first place. In the second part of the talk, I will show how CCG syntactic theory can provide not only an explanation of why some universals exist but also a prediction of what word orders we will not find in human languages.
+
+- date: 2025-01-15
+  time: 16:30-17:30 UTC+1
+  speakers:
+    - name: "Isabel Papadimitriou"
+      affiliation: "Harvard University"
+      local_time: "10:30-11:30 UTC-5"
+  title: "What can language models teach us about structure in human language?"
+  video: https://uqam.ca.panopto.com/Panopto/Pages/Viewer.aspx?id=bb80a94d-c238-4c8a-b2f8-b2670181988d
+  slides: slides/2025-01-15-papadimitriou.pdf
+  abstract: |
+    This talk will examine how linguistic theory can benefit from the surprising successes of language models in modeling human language production. Language models provide linguists with an unprecedented empirical tool to expand and test our theoretical hypotheses about language. I will go over two main methodologies for taking advantage of language models as an empirical tool. Firstly, using language model training as an empirical testbed, examining what kinds of environments make statistical language learning possible or hard. Secondly, examining language model internals as functional theories for how language might be represented to lead to capabilities, focusing on how grammatical role is represented and used by language models. Both methodologies showcase the importance of developing empirical paradigms that narrow the gap between computational methods and linguistic concerns in order to make language models into valid tools for theoretical linguistics.
+
+- date: 2024-12-11
+  time: 16:30-17:30 UTC+1
+  speakers:
+    - name: "Alessandro Lenci"
+      affiliation: "Università di Pisa"
+  title: "I don’t Believe they Reason about Beliefs. Propositional Attitudes in Large Language Models"
+  video: https://uqam.ca.panopto.com/Panopto/Pages/Viewer.aspx?id=2c0fe211-0305-481a-96d6-b24a00a7cb97
+  slides: slides/2024-12-11-lenci.pdf
+  abstract: |
+    Large Language Models (LLMs) reveal outstanding linguistic abilities acquired through a simple, general-purpose word-prediction learning objective that allows them to extract huge amounts of knowledge encoded in distributional statistics. These so-called “emerging abilities” apparently include important aspects of pragmatic competence as well, such as for instance mastering indirect speech acts or interpreting figurative expressions. These phenomena are particularly important because they are usually considered to be the hallmark of human language understanding and creativity, and to presuppose sophisticated abilities to represent and reason about belief states. In this talk, I will present evidence from recent research investigating the performance of LLMs in pragmatic tasks. Results will be discussed within the general question of the scope and nature of language understanding in Generative AI.
+
+- date: 2024-11-18
+  time: 17:00-18:00 UTC+1
+  speakers:
+    - name: "Denis Paperno"
+      affiliation: "Utrecht University"
+  title: "On visual grounding at the age of deep learning"
+  video: https://uqam.ca.panopto.com/Panopto/Pages/Viewer.aspx?id=b0965125-9286-4867-b090-b22d00ed9c18
+  slides: slides/2024-11-18-paperno.pdf
+  abstract: |
+    Language models, large and small, have traditionally been criticized for the lack of grounding, i.e. link to extralinguistic reality, including perceptual reality. By now, similar models can process both text and input in other modalities such as visual. The talk will discuss some empirical findings on (visual) grounding in neural models. Does visual grounding produce measurably different types of representations? How can the differences be characterized semantically? What linguistic aspects are multimodal models good at, and what is still lacking?
+
+- date: 2024-10-16
+  time: 15:00-16:00 UTC+2
+  speakers:
+    - name: "Isabelle Dautriche"
+      affiliation: "CNRS"
+  title: "The primitive of semantics in human infants and baboons (Papio papio)"
+  video: https://uqam.ca.panopto.com/Panopto/Pages/Viewer.aspx?id=0d737bd3-8bea-4e8e-9f18-b20b0141489c
+  slides: slides/2024-10-16-dautriche.pdf
+  abstract: |
+    Human languages share a number of universal features, from the properties of lexical meanings to the way these meanings are composed and realised on the surface (i.e. word order). In this talk, I will present the results of a research program investigating experimentally the cognitive origins of these shared features of language in non-human primates and in human infants to determine whether these properties can be found outside language and outside humans. I will report three sets of studies suggesting that baboons (Papio papio) and infants (i) like to manipulate ‘concepts’ of the same shape as ours, (ii) can compose mental representations and (iii) display attentional preferences consistent with some of the word order found in language.
+
+- date: 2024-09-11
+  time: 17:00-18:00 UTC+2
+  speakers:
+    - name: "Meaghan Fowlie"
+      affiliation: "Utrecht University"
+  title: "Trees as building instructions"
+  video: https://uqam.ca.panopto.com/Panopto/Pages/Viewer.aspx?id=ed0395f9-5aa3-4f0f-863a-b1e801122fd2
+  slides: slides/2024-09-11-fowlie.pdf
+  abstract: |
+    Trees are very common linguistic representations, used for instance in rewrite grammars, X-Bar grammars, and lambda expressions. Trees can also be records of the steps by which a structure was built, for instance a derivation tree or a term over an algebra. These building instructions don’t have to build trees, but can build anything you like. This opens the possibility of using well-established and interpretable tree-prediction methods, such as dependency parsing, to predict a wide variety of structures. This talk will cover some subset of the following ways of using trees as building instructions: IRTGs, Minimalist Grammars, algebra terms, and rewrite grammars. It will also cover some subset of the following computational methods for predicting trees qua building instructions: the Apply-Modify Algebra and Minimalist parsing.
+
+- date: 2024-06-12
+  time: 17:00-18:00 UTC+2
+  speakers:
+    - name: "Kenny Smith"
+      affiliation: "University of Edinburgh"
+      local_time: "16:00-17:00 UTC+1"
+  title: "The evolution of linguistic regularities and exceptions"
+  video: https://uqam.ca.panopto.com/Panopto/Pages/Viewer.aspx?id=bd33d27b-76c5-4e3c-896c-b18e00f8dc14
+  slides: slides/2024-06-12-smith.pdf
+  abstract: |
+    Languages persist through a cycle of learning and use – we learn the language of our community through immersion in that language, then in using that language to meet our communicative goals we generate more linguistic data which others learn from. In previous work we have used computational and experimental methods to show how this cycle of learning and use can explain some of the fundamental structural features shared by all languages – for example, the fact that all languages exploit regular rules for generating meaningful expressions allows languages to be both relatively learnable but also exceptionally powerful tools for communication. In this talk I’ll briefly review this older work on the evolution of regularity, then apply the same approach to understanding exceptions to those regular rules. Within individual languages, exceptions and irregularities tend not to be distributed randomly – idiosyncratic exceptions tend to occur for high-frequency items, with low-frequency items following the general regular rule. And languages spoken in small, isolated communities tend to have more irregularities, exceptions, and complexity in general than languages (like English) spoken in large heterogeneous communities. I’ll describe a recent series of experiments, using artificial language learning and iterated learning methods, showing how this distribution of irregularity within and across languages can be explained as a consequence of the same processes of learning and use that account for linguistic regularity.
+
+- date: 2024-05-15
+  time: 17:00-18:00 UTC+2
+  speakers:
+    - name: "Vered Shwartz"
+      affiliation: "University of British Columbia"
+      local_time: "08:00-09:00 UTC-7"
+  title: "Reality Check: Natural Language Processing in the era of Large Language Models"
+  video: https://uqam.ca.panopto.com/Panopto/Pages/Viewer.aspx?id=516aab3f-c687-404e-918b-b17200d52703
+  slides: slides/2024-05-15-shwartz.pdf
+  abstract: |
+    Large language models (LLMs) contributed to a major breakthrough in NLP, both in terms of understanding natural language queries, commands or questions; and in generating relevant, coherent, grammatical, human-like text. LLMs like ChatGPT became a product used by many, for getting advice, writing essays, troubleshooting and writing code, creative writing, and more. This calls for a reality check: which NLP tasks did LLMs solve? What are the remaining challenges, and which new opportunities did LLMs create?
+
+    
+
+    In this talk, I will discuss several areas of NLP that can benefit from but are still challenging for LLMs: grounding, i.e. interpreting language based on non-linguistic context; reasoning; and real-world applications. Finally, I will argue that the standard benchmarking and evaluation techniques used in NLP need to drastically change in order to provide a more realistic picture of current capabilities.
+
+- date: 2024-04-24
+  time: 17:00-18:00 UTC+2
+  speakers:
+    - name: "Claire Gardent"
+      affiliation: "CNRS"
+  title: "Simplifying Documents: Planning helps and Context matters"
+  video: https://uqam.ca.panopto.com/Panopto/Pages/Viewer.aspx?id=d626fabf-151f-4815-91ed-b15d00d8177a
+  slides: slides/2024-04-24-gardent.pdf
+  abstract: |
+    Work on simplification has long focused on sentences. In this talk, I will propose an approach for simplifying documents which is based on two key ideas: Planning helps and context matters. Thus we propose a two step simplification model which starts by planning the sequence of simplification operations that will be applied to the document sentences. For context, we argue that both local and global context must be modeled as different simplification operations require knowledge of different types of context.
+
+    
+
+    We will explore various models which exploit document context for planning and/or simplification, either by iterating over larger text units or by extending the system architecture to attend over a high-level representation of document context. If time allows, I will further discuss some issues which arise with evaluation and present a new metric we develop to assess simplicity.
+
+    
+
+    (Joint work with Liam Cripwell)
+
+- date: 2024-04-10
+  time: 16:00-17:00 UTC+2
+  speakers:
+    - name: "Aaron Steven White"
+      affiliation: "University of Rochester"
+      local_time: "10:00-11:00 UTC-4"
+  title: "Ontological scaffolding for ontology-free representations of complex situations"
+  video: https://uqam.ca.panopto.com/Panopto/Pages/Viewer.aspx?id=7c86e2c5-662e-4816-9dbd-b14f00d63b51
+  slides: slides/2024-04-10-white.pdf
+  abstract: |
+    We use natural language to convey information about situations: things that happen or stuff that is true. This ability is supported by systematic relationships between the way we conceptualize situations and the way we describe them. These systematic relationships in turn underwrite inferences that go beyond what one strictly says in describing a situation. The question that motivates this talk is how to design systems that correctly capture the inferences we draw about situations on the basis of their descriptions.
+
+    
+
+    Classical approaches to this question–exemplified in their modern form by graph-based representations, such Abstract Meaning Representation–attempt to capture the situation conceptualization associated with a description using a symbolic situation ontology and to draw inferences on the basis of rules stated over that ontology. An increasingly popular alternative to such ontology-factored approaches are ontology-free approaches, which attempt to directly represent inferences about a situation as natural language strings associated with a situation description, thereby bypassing the problem of engineering a situation ontology entirely.
+
+    
+
+    I discuss the benefits and drawbacks of these two approaches and present two case studies in synthesizing them that focus specifically on how best to capture inferences about complex situations–i.e. situations, like building a house, that themselves may be composed of subsituations, like laying the house’s foundations, framing the house, etc. I argue that we should ultimately strive for ontology-free representations but that the challenges inherent to reasoning about complex situations highlight the persistent benefits of situation ontologies in providing representational scaffolding for the construction of such representations.
+
+- date: 2024-02-14
+  time: 17:00-18:00 UTC+1
+  speakers:
+    - name: "Canaan Breiss"
+      affiliation: "University of Southern California"
+      local_time: "8:00-9:00 UTC-8"
+    - name: "Alexis Ross"
+      affiliation: "Massachusetts Institute of Technology"
+      local_time: "11:00-12:00 UTC-5"
+  title: "Learning Phonotactics from Linguistic Informants"
+  video: https://uqam.ca.panopto.com/Panopto/Pages/Viewer.aspx?id=544a34b0-9f7c-4868-9e80-b11701065545
+  slides: slides/2024-02-14-breiss-ross.pdf
+  abstract: |
+    We propose an interactive approach to language learning that utilizes linguistic acceptability judgments from an informant (a competent language user) to learn a grammar. Given a grammar formalism and a framework for synthesizing data, our model iteratively selects or synthesizes a data-point according to one of a range of information-theoretic policies, asks the informant for a binary judgment, and updates its own parameters in preparation for the next query. We demonstrate the effectiveness of our model in the domain of phonotactics, the rules governing what kinds of sound-sequences are acceptable in a language, and carry out two experiments, one with typologically-natural linguistic data and another with a range of procedurally-generated languages. We find that the information-theoretic policies that our model uses to select items to query the informant achieve sample efficiency comparable to, and sometimes greater than, fully supervised approaches.
+
+- date: 2024-01-17
+  time: 17:00-18:00 UTC+1
+  speakers:
+    - name: "Raquel Fernández"
+      affiliation: "University of Amsterdam"
+  title: "Large language models and human language processing: from variability to prediction"
+  video: https://uqam.ca.panopto.com/Panopto/Pages/Viewer.aspx?id=b8a3cc1d-54b2-488c-a4c2-b0fb00334811
+  slides: slides/2024-01-17-fernandez.pdf
+  abstract: |
+    Current language models have been shown to simulate human language surprisingly well, generating fluent, grammatical text and encoding meaning representations that resemble human semantic knowledge. Can known properties of human language use provide valuable insights for language models? And conversely, can language modelling techniques contribute to our understanding of human language processing? In this talk, I will start by arguing that to be considered good statistical models of language production, language models should entertain levels of uncertainty calibrated to the degree of variability observed in humans, and show that to a large extent they do, albeit with some caveats. Building on this result, I will then propose a novel measure to quantify the predictability of an utterance using neural text generators and show that it correlates with reading times and acceptability judgements remarkably well, complementing classic measures of surprisal.
+
+- date: 2023-12-13
+  time: 17:00-18:00 UTC+1
+  speakers:
+    - name: "Richard Futrell"
+      affiliation: "UC Irvine"
+      local_time: "8:00-9:00 UTC-8"
+  title: "Constraints on information processing in language comprehension and production"
+  video: https://uqam.ca.panopto.com/Panopto/Pages/Viewer.aspx?id=748f96fc-7684-49d1-a386-b0d7014826bc
+  slides: slides/2023-12-13-futrell.pdf
+  abstract: |
+    I argue that some major properties of online language processing—both comprehension and production—can be understood in terms of limits on information processing formalized using information theory. On the comprehension side, I present a computational model where an informational bottleneck on memory gives rise to dependency locality effects and detailed crosslinguistic patterns of structural forgetting. On the production side, I present a model where incremental sentence production is constrained by an information bottleneck on cognitive control. Both models lead to a view where statistical prediction, as performed by modern large language models, is a key part of the way language is comprehended and produced.
+
+- date: 2023-09-13
+  time: 17:00-18:00 UTC+2
+  speakers:
+    - name: "Anna Ivanova"
+      affiliation: "Massachusetts Institute of Technology"
+      local_time: "11:00-12:00 UTC-4"
+  title: "Dissociating formal and functional linguistic competence in large language models"
+  video: https://uqam.ca.panopto.com/Panopto/Pages/Viewer.aspx?id=85ca96b8-ea13-42f7-b291-b082011a1529
+  slides: slides/2023-09-13-ivanova.pdf
+  abstract: |
+    Today’s large language models (LLMs) routinely generate coherent, grammatical and seemingly meaningful paragraphs of text. This achievement has led to speculation that LLMs have become “thinking machines”, capable of performing tasks that require reasoning and/or world knowledge. In this talk, I will introduce a distinction between formal competence—knowledge of linguistic rules and patterns—and functional competence—understanding and using language in the world. This distinction is grounded in human neuroscience, which shows that formal and functional competence recruit different cognitive mechanisms. I will show that the word-in-context prediction objective has allowed LLMs to essentially master formal linguistic competence; however, LLMs still lag behind at many aspects of functional linguistic competence, and improvements in this domain often depend on specialized fine-tuning or coupling with an external module. In the last part of the talk, I will present a case study highlighting the difficulties of disentangling formal and functional competence when it comes to evaluating world knowledge, and show that similar difficulties are present in neuroscience research. I will conclude by discussing the value of the formal/functional competence framework for evaluating and building flexible, humanlike models of language use.
+
+- date: 2023-06-14
+  time: 17:00-18:00 UTC+2
+  speakers:
+    - name: "Alex Warstadt"
+      affiliation: "ETH Zürich"
+  title: "Language Models and Human Language Acquisition"
+  video: https://uqam.ca.panopto.com/Panopto/Pages/Viewer.aspx?id=75e6478e-1584-4a2d-b068-b02200fc26a1
+  slides: slides/2023-06-14-warstadt.pdf
+  abstract: |
+    Children’s remarkable ability to learn language has been an object of fascination in science for millennia. In just the last few years, neural language models (LMs) have also proven to be incredibly adept at learning human language. In this talk, I discuss scientific progress that uses recent developments in natural language processing to advance linguistics—and vice-versa. My research explores this intersection from three angles: evaluation, experimentation, and engineering. Using linguistically motivated benchmarks, I provide evidence that LMs share many aspects of human grammatical knowledge and probe how this knowledge varies across training regimes. I further argue that—under the right circumstances—we can use LMs to test key hypotheses about language acquisition that have been difficult or impossible to evaluate with human subjects. As a proof of concept, I use LMs to experimentally test the long controversial claim that direct disambiguating evidence is necessary to acquire the structure dependent rule of subject-auxiliary inversion in English. Finally, I describe ongoing work to engineer learning environments and objectives for LM pretraining inspired by human development, with the goal of making LMs more data efficient and more plausible models of human learning.
+
+- date: 2023-05-17
+  time: 17:00-18:00 UTC+2
+  speakers:
+    - name: "Laura Kallmeyer"
+      affiliation: "Heinrich-Heine Universität Düsseldorf"
+  title: "Probing large language models for syntactic structure: Creating nonce treebanks in order to separate syntax from semantics"
+  video: https://uqam.ca.panopto.com/Panopto/Pages/Viewer.aspx?id=59b17255-8b6a-4957-94b4-b00600f437a2
+  abstract: |
+    The question we address in this work is to which extent large language models (LMs) learn syntactic structure. One difficulty when probing LMs for syntax is to ensure whether the syntactic findings are purely due to syntax or are the result of semantic knowledge learned in the model. In order to avoid this potential problem, we create syntactically well-formed but semantically nonce treebanks by, starting from an existing dependency treebank, replacing a certain ratio of words with words that can appear in the same syntactic contexts. In Arps et al. (2022), we use the Penn Treebank and semantically perturbed versions of it and we train a linear probe using our treebanks that constructs entire constituency parse trees based on a sequence labeling scheme. We find that even on semantically perturbed data, the constituency tree can be reconstructed by the probe with an F1 score of 72.8 in the lowest nonce setting. In more recent work, we extend this line of research to other languages, creating nonce treebanks also for Arabic, Chinese, French, German and Russian. We then apply a structural probing method for labeled dependency trees (Müller-Eberstein et al., 2022) to the nonce treebanks. The results show that in this setting, probes trained on the original treebanks are able to predict the syntactic structure of nonce test sets, with good performance but an increase in error rate. Probes trained on nonce treebanks perform on par with standard probes when evaluated on the original treebanks in monolingual and crosslingual settings. These results and the ones from Arps et al. (2022) indicate that the syntactic structure of nonce sentences is encoded in the language model.
+  references:
+    - "David Arps, Younes Samih, Laura Kallmeyer, and Hassan Sajjad. 2022. Probing for constituency structure in neural language models. In Findings of the Association for Computational Linguistics: EMNLP 2022, pages 6738–6757, Abu Dhabi, United Arab Emirates. Association for Computational Linguistics."
+    - "Max Müller-Eberstein, Rob van der Goot, and Barbara Plank. 2022. Probing for labeled dependency trees. In Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 277 1: Long Papers), pages 7711–7726, Dublin, Ireland. Association for Computational Linguistics."
+
+- date: 2023-04-12
+  time: 17:00-18:00 UTC+2
+  speakers:
+    - name: "Timothy J. O’Donnell"
+      affiliation: "McGill University"
+      local_time: "11:00-12:00 UTC-4"
+  title: "Linguistic Productivity, Compositionality, and Incremental Processing"
+  slides: slides/2023-04-12-odonnell.pdf
+  abstract: |
+    In this talk, I will present several recent projects focusing on three key properties of natural language. First, I will discuss several projects focused on productivity: the ability to produce and comprehend new expressions. I will review work using program synthesis techniques to understand learning in “small data” domains as well as some recent results examining the productivity of language models. Finally, I will turn to the problem of incremental processing, presenting modeling and empirical work on the nature of the algorithms that underlie the human sentence processor.
+
+- date: 2023-03-22
+  time: 17:00-18:00 UTC+1
+  speakers:
+    - name: "Katrin Erk"
+      affiliation: "University of Texas at Austin"
+      local_time: "11:00-12:00 UTC-5"
+  title: "The habitual listener: a usage-based view of lexical meaning, and a matching computational model of utterance understanding"
+  video: https://uqam.ca.panopto.com/Panopto/Pages/Viewer.aspx?id=1ada1914-e5bf-4ce8-968e-afce00e9ecbe
+  slides: slides/2023-03-22-erk.pdf
+  abstract: |
+    We can think of word embeddings as a condensed record of utterances of many speakers. If we do that, then by inspecting word embeddings we can get a sense of a usage-based notion of word meaning: What patterns, what influences on word meaning in context get picked up in this condensed record? I will argue that what we see in word embeddings is a mixture of many things, including what is traditionally called word senses, but also cultural and emotional influences, basically a record of the stories that people habitually tell with words. The theory that comes closest to what we see in word embeddings is frame semantics, which assumes that words evoke rich, complex chunks of background knowledge.
+
+    
+
+    If word meaning contains traces of world knowledge, then this best matches a Contextualist view of utterance understanding, where understanding what is said already involves *some* pragmatics. I will sketch a model of utterance understanding that we have been developing, Situation Description Systems. In Situation Description Systems, word meaning in context is influenced, among other things, by the overall “story” or scenario that the sentence alludes to. This model has been implemented at scale using corpus-derived representations of word meaning.
+
+    
+
+    The picture that emerges about utterance understanding is then not a divide between literal meaning and pragmatic inference, but between habitual, conventionalized lexical-pragmatic knowledge on the one hand, and on the other hand explicit reasoning over what is implicated.
+
+- date: 2023-02-15
+  time: 17:00-18:00 UTC+1
+  speakers:
+    - name: "Steven T. Piantadosi"
+      affiliation: "UC Berkeley"
+      local_time: "08:00-09:00 UTC-8"
+  title: "One model for the learning of language"
+  video: https://uqam.ca.panopto.com/Panopto/Pages/Viewer.aspx?id=3349b45e-7e4f-4b4b-a267-afb1011b9c8c
+  slides: slides/2023-02-15-piantadosi.pdf
+  abstract: |
+    A major target of linguistics and cognitive science is to understand what class of learning systems can acquire the key structures of natural language. Until recently, the computational requirements of language have been used to argue that learning is impossible without a highly constrained hypothesis space. Here, we describe a learning system that is maximally unconstrained, operating over the space of all computations, and is able to acquire several of the key structures present natural language from positive evidence alone. We demonstrate this by providing the same learning model with data from 70 distinct formal languages which have been argued to capture key features of language, have been studied in experimental work, or come from an interesting complexity class. The model is able to successfully induce the latent system generating the observed strings from positive evidence in almost all cases, including regular, context-free, and context-sensitive formal languages, as well as languages studied in artificial language learning experiments. These results show that relatively small amounts of positive evidence can support learning of rich classes of generative computations over structures.
+
+- date: 2023-01-18
+  time: 17:00-18:00 UTC+1
+  speakers:
+    - name: "Carolyn Jane Anderson"
+      affiliation: "Wellesley College"
+      local_time: "11:00-12:00 UTC-5"
+  title: "A Bayesian Approach to Modeling Grammatical Perspective-Taking"
+  video: https://uqam.ca.panopto.com/Panopto/Pages/Viewer.aspx?id=4b02e1c5-2c60-44dc-b925-af8f00fee488
+  slides: slides/2023-01-18-anderson.pdf
+  abstract: |
+    Many components of language involve perspective: deictic expressions, predicates of personal taste, and epithets, among others. Perspective is situation-dependent, dynamic, and grounded in the physical world, making it a particularly challenging domain to model. For instance, the perspectival motion verb ‘come’ requires a perspective-holder to be located at the destination of motion. When a listener hears a sentence like ‘Thelma is coming to the zoo’, how do they decide whose perspective the speaker is using?
+
+    
+
+    In this talk, I will propose a computational model of the reasoning process that conversation participants use to select and interpret perspectival expressions. I model the listener’s interpretative process as a Bayesian inference process: listeners reason jointly about the speaker’s intended meaning and their adopted perspective using a mental model of how the speaker selected the utterance. I generate predictions from simulations run in the WebPPL probabilistic programming language and provide empirical evidence from crowdsourced production and comprehension experiments in support of a key prediction of the model: that listeners simultaneously consider multiple perspectives.
+
+- date: 2022-12-14
+  time: 16:00-17:00 UTC+1
+  speakers:
+    - name: "Guy Emerson"
+      affiliation: "University of Cambridge"
+      local_time: "15:00-16:00 UTC+0"
+  title: "Learning meaning in a logically structured model: An introduction to Functional Distributional Semantics"
+  slides: slides/2022-12-14-emerson.pdf
+  abstract: |
+    The aim of distributional semantics is to design computational techniques that can automatically learn the meanings of words based on the contexts in which they are observed. The mainstream approach is to represent meanings as vectors (such as Word2Vec embeddings, or contextualised BERT embeddings). However, vectors do not provide a natural way to talk about basic concepts in logic and formal semantics, such as truth and reference. While there have been many attempts to extend vector space models to support such concepts, there does not seem to be a clear solution. In this talk, I will instead go back to fundamentals, questioning whether we should represent meaning as a vector.
+
+    
+
+    I will present the framework of Functional Distributional Semantics, which makes a clear distinction between words and the entities they refer to. The meaning of a word is represented as a binary classifier over entities, identifying whether the word could refer to the entity – in formal semantic terms, whether the word is true of the entity. The structure of the model provides a natural way to model logical inference, semantic composition, and context-dependent meanings, where Bayesian inference plays a crucial role. The same kind of model can also be applied to different kinds of data, including both grounded data such as labelled images (where entities are observed) and also text data (where entities are latent). I will discuss results on semantic evaluation datasets, indicating that the model can learn information not captured by vector space models like Word2Vec and BERT. I will conclude with an outlook for future work, including challenges and opportunities of joint learning from different data sources.
+
+- date: 2022-11-16
+  time: 17:00-18:00 UTC+1
+  speakers:
+    - name: "Allyson Ettinger"
+      affiliation: "University of Chicago"
+      local_time: "10:00-11:00 UTC-6"
+  title: "“Understanding” and prediction: Disentangling meaning extraction and predictive processes in humans and AI"
+  video: https://uqam.ca.panopto.com/Panopto/Pages/Viewer.aspx?id=3568527f-255d-4455-9a99-af500121312d
+  slides: slides/2022-11-16-ettinger.pdf
+  abstract: |
+    The interaction between “understanding” and prediction is a central theme both in psycholinguistics and in the AI domain of natural language processing (NLP). Evidence indicates that the human brain engages in predictive processing while extracting the meaning of language in real time, while NLP models use training based on prediction in context to learn strategies of language “understanding”. In this talk I will discuss work that tackles key problems both in linguistics and in NLP by exploring and teasing apart effects of compositional meaning extraction and effects of statistical-associative processes associated with prediction. I will begin with work that diagnoses the linguistic capabilities of NLP models, investigating the extent to which these models exhibit robust compositional meaning processing resembling that of humans, versus shallower heuristic sensitivities associated with predictive processes. I will show that with properly controlled tests, we identify important limitations in the capacities of current NLP models to handle compositional meaning as humans do. However, the models’ behaviors do show signs of aligning with statistical sensitivities associated with predictive mechanisms in human real-time processing. Leveraging this knowledge, I will then turn to work that directly models the mechanisms underlying human real-time language comprehension, with a focus on understanding how the robust compositional meaning extraction processes exhibited by humans interact with probabilistic predictive mechanisms. I will show that by combining psycholinguistic theory with targeted use of measures from NLP models, we can strengthen the explanatory power of psycholinguistic models and achieve nuanced accounts of interacting factors underlying a wide range of observed effects in human language processing.
+
+- date: 2022-10-12
+  time: 17:00-18:00 UTC+2
+  speakers:
+    - name: "Dan Lassiter"
+      affiliation: "University of Edinburgh"
+      local_time: "16:00-17:00 UTC+1"
+  title: "Modelling suppositional meaning in discourse"
+  abstract: |
+    English and many other languages show a variety of “suppositional devices” that are used to create temporary discourse contexts where a certain proposition is taken for granted. Most work on this topic has dealt with a single item, “if”, and assumes that the phenomenon is basically one of sentence-level semantics. In recent work I’ve argued that such theories miss a number of important generalizations that are better captured by treating the discourse effect of suppositions as primary and their sentence-level effects as parasitic on the pragmatics of assertion and the dependency of certain operators on local context. After reviewing these arguments, I’ll turn to a rather straightforward account that this approach suggests of so-called “modal subordination”, in which a temporary assumption survives over multiple utterances. A simple, context-free version of this theory is sufficient in many cases, but certain examples show crossing dependencies that require a non-context-free treatment. This is interesting, among other things, because Kogkalidis and Wijnholds (2022) have recently shown that BERT and other large language models have difficulty learning crossing grammatical dependencies in Dutch. Similar dependencies at the discourse level may be even more difficult to acquire, since the cues that humans use to resolve them are typically not explicitly represented in written text. I suggest that learning crossing discourse dependencies will be a major practical challenge for those who seek to engineer robust natural language understanding systems using written texts as the primary data source.
+
+- date: 2022-09-14
+  time: 17:00-18:00 UTC+2
+  speakers:
+    - name: "Ellie Pavlick"
+      affiliation: "Brown University & Google"
+      local_time: "11:00-12:00 UTC-4"
+  title: "Implementing Symbols and Rules with Neural Networks"
+  video: https://uqam.ca.panopto.com/Panopto/Pages/Viewer.aspx?id=d006b8de-64b3-4c8e-938a-af16014dd1e3
+  slides: slides/2022-09-14-pavlick.pdf
+  abstract: |
+    Many aspects of human language and reasoning are well explained in terms of symbols and rules. However, state-of-the-art computational models are based on large neural networks which lack explicit symbolic representations of the type frequently used in cognitive theories. One response has been the development of neuro-symbolic models which introduce explicit representations of symbols into neural network architectures or loss functions. In terms of Marr’s levels of analysis, such approaches achieve symbolic reasoning at the computational level (“what the system does and why”) by introducing symbols and rules at the implementation and algorithmic levels. In this talk, I will consider an alternative: can neural networks (without any explicit symbolic components) nonetheless implement symbolic reasoning at the computational level? I will describe several diagnostic tests of “symbolic” and “rule-governed” behavior and use these tests to analyze neural models of visual and language processing. Our results show that on many counts, neural models appear to encode symbol-like concepts (e.g., conceptual representations that are abstract, systematic, and modular), but not perfectly so. Analysis of the failure cases reveals that future work is needed on methodological tools for analyzing neural networks, as well as refinement of models of hybrid neuro-symbolic reasoning in humans, in order to determine whether neural networks’ deviations from the symbolic paradigm are a feature or a bug.
+
+- date: 2022-06-14
+  time: 17:00-18:00 UTC+2
+  speakers:
+    - name: "Gene Louis Kim"
+      affiliation: "University of South Florida"
+      local_time: "11:00-12:00 UTC-4"
+  title: "Corpus Annotation, Parsing, and Inference for Episodic Logic Type Structure"
+  video: https://uqam.ca.panopto.com/Panopto/Pages/Viewer.aspx?id=66f1d326-d2e1-4c08-9f0a-aeb500da3062
+  slides: slides/2022-06-14-kim.pdf
+  abstract: |
+    A growing interest in moving beyond lesser goals in the NLP community and moving to language understanding has led to the search for a semantic representation which fulfills its nuanced modeling and inferential needs. In this talk, I discuss the design and use of Unscoped Logical Forms (ULFs) of Episodic Logic for the goal of building a system that can understand human language. ULF is designed to balance the needs of semantic expressivity, ease of annotation for training corpus creation, derivability from English, and support of inference. I show that by leveraging the systematic syntactic and semantic underpinnings of ULFs we can outperform existing semantic parsers and overcome the limitations of modern data-hungry techniques on a more modestly-sized dataset. I then describe our experiments showing how ULFs enable us to generate certain important classes of discourse inferences and “natural logic” inferences. I conclude by sketching the current wider use of ULFs in dialogue management and schema learning. Time permitting, I will discuss promising early results of augmenting the manually-annotated ULF dataset with formulas sampled from the underlying ULF type system for improving the trained ULF parser.
+
+- date: 2022-05-17
+  time: 17:00-18:00 UTC+2
+  speakers:
+    - name: "Roger Levy"
+      affiliation: "Massachusetts Institute of Technology"
+      local_time: "11:00-12:00 UTC-4"
+  title: "The acquisition and processing of grammatical structure: insights from deep learning"
+  video: https://uqam.ca.panopto.com/Panopto/Pages/Viewer.aspx?id=5c588284-e74f-4616-abf5-ae9e0156b16f
+  slides: slides/2022-05-17-levy.pdf
+  abstract: |
+    Psycholinguistics and computational linguistics are the two fields most dedicated to accounting for the computational operations required to understand natural language. Today, both fields find themselves responsible for understanding the behaviors and inductive biases of “black-box” systems: the human mind and artificial neural-network language models (NLMs), respectively. Contemporary NLMs can be trained on a human lifetime’s worth of text or more, and generate text of apparently remarkable grammaticality and fluency. Here, we use NLMs to address questions of learnability and processing of natural language syntax. By testing NLMs trained on naturalistic corpora as if they were subjects in a psycholinguistics experiment, we show that they exhibit a range of subtle behaviors, including embedding-depth tracking and garden-pathing over long stretches of text, suggesting representations homologous to incremental syntactic state in human language processing. Strikingly, these NLMs also learn many generalizations about the long-distance filler-gap dependencies that are a hallmark of natural language syntax, perhaps most surprisingly many “island” constraints. I conclude with comments on the long-standing idea of whether the departures of NLMs from the predictions of the “competence” grammars developed in generative linguistics might provide a “performance” account of human language processing: by and large, they don’t.
+
+- date: 2022-04-12
+  time: 15:00-16:00 UTC+2
+  speakers:
+    - name: "Noortje Venhuizen"
+      affiliation: "Saarland University"
+  title: "Distributional Formal Semantics"
+  video: https://uqam.ca.panopto.com/Panopto/Pages/Viewer.aspx?id=fede04e5-a21c-4f66-b224-ae7600dab2ca
+  slides: slides/2022-04-12-venhuizen.pdf
+  abstract: |
+    Formal Semantics and Distributional Semantics offer complementary strengths in capturing the meaning of natural language. As such, a considerable amount of research has sought to unify them, either by augmenting formal semantic systems with a distributional component, or by defining a formal system on top of distributed representations. Arriving at such a unified formalism has, however, proven extremely challenging. One reason for this is that formal and distributional semantics operate on a fundamentally different ‘representational currency’: formal semantics defines meaning in terms of models of the world, whereas distributional semantics defines meaning in terms of linguistic context. An alternative approach from cognitive science, however, proposes a vector space model that defines meaning in a distributed manner relative to the state of the world. This talk presents a re-conceptualisation of this approach based on well-known principles from formal semantics, thereby demonstrating its full logical capacity. The resulting Distributional Formal Semantics is shown to offer the best of both worlds: contextualised distributed representations that are also inherently compositional and probabilistic. The application of the representations is illustrated using a neural network model that captures various semantic phenomena, including probabilistic inference and entailment, negation, quantification, reference resolution and presupposition.
+
+- date: 2022-03-15
+  time: 17:00-18:00 UTC+1
+  speakers:
+    - name: "Mark Steedman"
+      affiliation: "University of Edinburgh"
+      local_time: "16:00-17:00 UTC+0"
+  title: "Projecting Dependency: CCG and Minimalism"
+  video: https://uqam.ca.panopto.com/Panopto/Pages/Viewer.aspx?id=aa59266a-d736-48fd-b778-ae5a0148e61a
+  slides: slides/2022-03-15-steedman.pdf
+  abstract: |
+    Since the publication of “Bare Phrase Structure” it has been clear that Chomskyan Minimalism can be thought of as a form of Categorial Grammar, distinguished by the addition of movement rules to handle “displacement” or non-local dependency in surface forms. More specifically, the Minimalist Principle of Inclusiveness can be interpreted as requiring that all language-specific details of combinatory potential, such as category, subcategorization, agreement, and the like, must be specified at the level of the lexicon, and must be either “checked” or “projected” unchanged by language-independent universal rules onto the constituents of the syntactic derivation, which can add no information such as “indices, traces, syntactic categories or bar-levels and so on” that has not already been specified in the lexicon.
+
+    
+
+    The place of rules of movement in such a system is somewhat unclear. While sometimes referred to as an “internal” form of MERGE, defined in terms of “copies” that are sometimes thought of as identical, it still seems to involve “action at a distance” over a structure. Yet Inclusiveness seems to require that copies are already specified as such in the lexicon.
+
+    
+
+    Combinatory Categorial Grammar (CCG) insists under a Principle of Adjacency that all rules of syntactic combination are local, applying to contiguous syntactically-typed constituents, where the type-system in question crucially includes second-order functions, whose arguments are themselves functions. The consequence is that iterated contiguous combinatory reductions can in syntactic and semantic lock-step project the lexical local binding by a verb of a complement such as an object NP from the lexicon onto an unbounded dependency, which can be satisfied by reduction with a relative pronoun or right-node raising, as well as by an in situ NP. A number of surface-discontinuous constructions, including raising, “there”-insertion, scrambling, non-constituent coordination, and “wh”-extraction can thereby be handled without any involvement of non-locality in syntactic rules, such as movement or deletion, in a theory that is “pure derivational”. One you have Inclusiveness, Contiguity is all you need.
+
+- date: 2022-02-15
+  time: 17:00-18:00 UTC+1
+  speakers:
+    - name: "Najoung Kim"
+      affiliation: "New York University"
+      local_time: "11:00-12:00 UTC-5"
+  title: "Compositional Linguistic Generalization in Artificial Neural Networks"
+  slides: slides/2022-02-15-kim.pdf
+  abstract: |
+    Compositionality is considered a central property of human language. One key benefit of compositionality is the generalization it enables—the production and comprehension of novel expressions analyzed as new compositions of familiar parts. I construct a test for compositional generalization for artificial neural networks based on human generalization patterns discussed in existing linguistic and developmental studies, and test several instantiations of Transformer (Vaswani et al. 2017) and Long Short-Term Memory (Hochreiter & Schmidhuber 1997) models. The models evaluated exhibit only limited degrees of compositional generalization, implying that their learning biases for induction to fill gaps in the training data differ from those of human learners. An error analysis reveals that all models tested lack bias towards faithfulness (à la Prince & Smolensky 1993/2002). Adding a glossing task (word-by-word translation), a task that requires maximally faithful input-output mappings, as an auxiliary training objective to the Transformer model substantially improves generalization, showing that the auxiliary training successfully modified the model’s inductive bias. However, the improvement is limited to generalization to novel compositions of known lexical items and known structures; all models still struggled with generalization to novel structures, regardless of auxiliary training. The challenge of structural generalization leaves open exciting avenues for future research for both human and machine learners.
+
+- date: 2022-01-18
+  time: 17:00-18:00 UTC+1
+  speakers:
+    - name: "Johan Bos"
+      affiliation: "University of Groningen"
+  title: "Variable-free Meaning Representations"
+  video: https://uqam.ca.panopto.com/Panopto/Pages/Viewer.aspx?id=fcac0dde-b2d6-4b53-9db8-ae2200f4d88a
+  slides: slides/2022-01-18-bos.pdf
+  abstract: |
+    Most formal meaning representations use variables to represent entities and relations between them. But variables can be bothersome for people annotating texts with meanings, and for algorithms that work with meanings representations, in particular the recent machine learning methods based on neural network technology.
+
+    
+
+    Hence the question that I am interested in is: can we replace the currently popular meaning representations with representations that do not use variables, without giving up any expressive power? My starting point are the representations of Discourse Representation Theory. I will show that these can be replaced by a simple language based on indices instead of variables, assuming a neo-Davidsonian event semantics.
+
+    
+
+    The resulting formalism has several interesting consequences. Apart from being beneficial to human annotators and machine learning algorithms, it also offers straightforward visualisation possibilities and potential for modelling information packaging.
+
+- date: 2021-12-14
+  time: 17:00-18:00 UTC+1
+  speakers:
+    - name: "Lisa Bylinina"
+      affiliation: "Bookarang, Netherlands"
+  title: "Polarity in multilingual language models"
+  video: https://uqam.ca.panopto.com/Panopto/Pages/Viewer.aspx?id=c291269b-bdc4-4a73-be44-adff01529422
+  slides: slides/2021-12-14-bylinina.pdf
+  abstract: |
+    The space of natural languages is constrained by various interactions between linguistic phenomena. In this talk, I will focus on one particular type of such interaction, in which logical properties of a context constrain the distribution of negative polarity items (NPIs), like English ‘any’. Correlational — and possibly, causal — interaction between logical monotonicity and NPI distribution has been observed for some NPIs in some languages for some contexts, with the help of theoretical, psycholinguistic and computational tools. How general is this relation across languages? How inferable is it from just textual data? What kind of generalization — if any — about NPI distribution would a massively multilingual speaker form, and what kind of causal structure would guide such speaker’s intuition? Humans speaking 100+ languages natively are hard to find — but we do have multilingual language models. I will report experiments in which we study NPIs in four languages (English, French, Russian and Turkish) in two pre-trained models — multilingual BERT and XLM-RoBERTa. We evaluate the models’ recognition of polarity-sensitivity and its cross-lingual generality. Further, using the artificial language learning paradigm, we look for the connection between semantic profiles of tokens and their ability to license NPIs. We find partial evidence for such connection.
+
+    
+
+    Joint work with Alexey Tikhonov (Yandex).
+
+- date: 2021-11-16
+  time: 17:00-18:00 UTC+1
+  speakers:
+    - name: "Alex Lascarides"
+      affiliation: "University of Edinburgh"
+      local_time: "16:00-17:00 UTC+0"
+  title: "Situated Communication"
+  video: https://uqam.ca.panopto.com/Panopto/Pages/Viewer.aspx?id=fa412e1e-826e-4d23-9386-ade500ec21c6
+  slides: slides/2021-11-16-lascarides.pdf
+  abstract: |
+    This talk focuses on how to represent and reason about the content of conversation when it takes place in an embodied, dynamic environment. I will argue that speakers can, and do, appropriate non-linguistic events into their communicative intents, even when those events weren’t produced with the intention of being a part of a discourse. Indeed, non-linguistic events can contribute an (instance of) a proposition to the content of the speaker’s message, even when her verbal signal contains no demonstratives or anaphora of any kind.
+
+    
+
+    I will argue that representing and reasoning about discourse coherence is essential to capturing these features of situated conversation. I will make two claims: first, non-linguistic events affect rhetorical structure in non-trivial ways; and secondly, rhetorical structure guides the conceptualisation of non-linguistic events. I will support the first claim via empirical observations from the STAC corpus (www.irit.fr/STAC/corpus.html)—a corpus of dialogues that take place between players during the board game Settlers of Catan. I will support the second claim via experiments in Interactive Task Learning: a software agent jointly learns how to conceptualise the domain, ground previously unknown words in the embodied environment, and solve its planning problem, by using the evidence of an expert’s corrective (verbal) feedback on its physical actions.
+
+- date: 2021-10-12
+  time: 17:00-18:00 UTC+2
+  speakers:
+    - name: "Christopher Potts"
+      affiliation: "Stanford University"
+      local_time: "8:00-9:00 UTC-7"
+  title: "Causal Abstractions of Neural Natural Language Inference Models"
+  video: https://uqam.ca.panopto.com/Panopto/Pages/Viewer.aspx?id=87917754-6d8c-4ab2-86bf-adc70010e4da
+  slides: slides/2021-10-12-potts.pdf
+  abstract: |
+    Neural networks have a reputation for being « black boxes » — complex, opaque systems that can be studied using only purely behavioral evaluations. However, much recent work on structural analysis methods (e.g., probing and feature attribution) is allowing us to peer inside these models and deeply understand their internal dynamics. In this talk, I’ll describe a new structural analysis method we’ve developed that is grounded in a formal theory of causal abstraction. In this method, neural representations are aligned with variables in interpretable causal models, and then *interchange interventions* are used to experimentally verify that the neural representations have the causal properties of their aligned variables. I’ll use these methods to explore problems in Natural Language Inference, focusing in particular on compositional interactions between lexical entailment and negation. Recent Transformer-based models can solve hard generalization tasks involving these phenomena, and our causal analysis method helps explain why: the models have learned modular representations that closely approximate the high-level compositional theory. Finally, I will show how to bring interchange interventions into the training process, which allows us to push our models to acquire desired modular internal structures like this.
+
+    
+
+    Joint work with Atticus Geiger, Hanson Lu, Noah Goodman, and Thomas Icard.
+
+- date: 2021-06-01
+  time: 10:30-18:30 UTC+2
+  speakers:
+    - name: "Juan Luis Gastaldi"
+      affiliation: "ETH Zürich"
+    - name: "Koji Mineshima"
+      affiliation: "Keio University"
+    - name: "Maud Pironneau"
+      affiliation: "Druide informatique"
+    - name: "Marie-Catherine de Marneffe"
+      affiliation: "Ohio State University"
+    - name: "Jacob Andreas"
+      affiliation: "MIT"
+    - name: "Olga Zamaraeva"
+      affiliation: "University of Washington"
+  title: "ILFC one-day event"
+  abstract: |
+    A full day of talks that launched the seminar, with six speakers.

@@ -1,0 +1,15 @@
+# Site settings. After editing this file, the website rebuilds automatically on GitHub.
+title: ILFC Seminar
+description: >-
+  Monthly online seminar on the interactions between formal and computational linguistics,
+  organised by RT LIFT2.
+mailing_list: https://sympa.inria.fr/sympa/subscribe/seminaire_ilfc
+organisers:
+  - name: Timothée Bernard
+    email: firstname.lastname@u-paris.fr
+  - name: Grégoire Winterstein
+    email: firstname.lastname@uqam.ca
+
+exclude:
+  - README.md
+  - resources
