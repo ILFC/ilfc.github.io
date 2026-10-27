@@ -1,0 +1,6 @@
+gs -sDEVICE=pdfwrite \
+   -dCompatibilityLevel=1.5 \
+   -dPDFSETTINGS=/printer \
+   -dNOPAUSE -dBATCH -dQUIET \
+   -sOutputFile=XXX_compressed.pdf \
+   XXX.pdf
