@@ -1,79 +1,17 @@
----
-layout: default
----
-{% assign today = site.time | date: "%Y-%m-%d" %}
-{% comment %} Sort by date, then by start time for sessions on the same day. {% endcomment %}
-{% assign days = site.data.talks | group_by_exp: "t", "t.date | date: '%Y-%m-%d'" | sort: "name" %}
-{% assign talks = "" | split: "" %}
-{% for g in days %}{% assign items = g.items | sort: "time" %}{% for t in items %}{% assign talks = talks | push: t %}{% endfor %}{% endfor %}
-<header class="masthead">
-  <div class="wrap">
-    <div class="mast-row">
-      <h1 class="site-title">ILFC</h1>
-      <div class="mast-side">
-        <p class="fr" lang="fr">Interactions entre Linguistiques Formelles et Computationnelles</p>
-        <p class="en">Formal × computational linguistics</p>
-        <p>Monthly online seminar</p>
-      </div>
-    </div>
-  </div>
-</header>
-<div class="intro-band">
-  <div class="wrap">
-    <div class="intro">
-      <p>The ILFC seminar, organised by RT LIFT2, brings together researchers from formal and computational linguistics, across the communities and around the world, to share their perspectives. It takes place online, roughly once a month during the academic year (September to June). Attendance is free. The seminar gave rise to <strong>BriGap</strong> (Bridges and Gaps between Formal and Computational Linguistics, <a href="https://brigap-workshop.github.io/">brigap-workshop.github.io</a>), a series of workshops where linguists and NLP scientists meet.</p>
-      <p class="cta"><a class="button" href="{{ site.mailing_list }}">Join the mailing list</a> <span>to get the Zoom link and announcements.</span></p>
-    </div>
-  </div>
-</div>
+<!DOCTYPE html>
+<html lang="en">
 
-<main class="wrap">
-  <section id="upcoming" aria-labelledby="upcoming-h">
-    <h2 id="upcoming-h">Upcoming sessions</h2>
-    <p class="note">Times are given in Paris time (<abbr title="Central European Time">UTC+1</abbr> in winter, UTC+2 in summer).</p>
-    <div class="talks" id="upcoming-list">
-      {% assign first = true %}
-      {% for t in talks %}{% assign day = t.date | date: "%Y-%m-%d" %}{% if day >= today %}
-        {% include talk.html talk=t open=true next=first %}
-        {% assign first = false %}
-      {% endif %}{% endfor %}
-    </div>
-    <p class="empty" id="upcoming-empty"{% unless first %} hidden{% endunless %}>The next sessions will be announced soon on the mailing list.</p>
-  </section>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ILFC Seminar</title>
+</head>
+<body>
 
-  <section id="past" aria-labelledby="past-h">
-    <div class="past-head">
-      <h2 id="past-h">Past sessions</h2>
-      <label class="search"><span class="visually-hidden">Search past sessions</span><input id="search" type="search" placeholder="Search speakers, titles, abstracts"></label>
-    </div>
-    <div id="past-list">
-      {% assign season = "" %}
-      {% assign past = talks | reverse %}
-      {% for t in past %}{% assign day = t.date | date: "%Y-%m-%d" %}{% if day < today %}
-        {% assign y = t.date | date: "%Y" | plus: 0 %}{% assign m = t.date | date: "%-m" | plus: 0 %}
-        {% if m < 8 %}{% assign y = y | minus: 1 %}{% endif %}
-        {% assign s = y | append: "" %}
-        {% if s != season %}
-          {% unless season == "" %}</div></div>{% endunless %}
-          {% assign season = s %}
-          <div class="season" data-season="{{ y }}"><h3 class="season-h">{{ y }}–{{ y | plus: 1 }}</h3><div class="talks">
-        {% endif %}
-        {% include talk.html talk=t %}
-      {% endif %}{% endfor %}
-      {% unless season == "" %}</div></div>{% endunless %}
-    </div>
-    <p class="empty" id="search-empty" hidden>No past session matches this search.</p>
-  </section>
+<h1>Monthly online ILFC seminar</h1>
+<p>The original website of the seminar is currently down.</p>
+<p><a href="https://sympa.inria.fr/sympa/subscribe/seminaire_ilfc">Join the mailing list</a> to get the Zoom link and announcements.</p>
+<p>The next session will take place on Thursday 12 November 2026, 16:30–17:30 Paris time (UTC+1), with Su Lin Blodgett (Mila). The title will be announced soon.</p>
+</body>
 
-  <section id="about" aria-labelledby="about-h">
-    <h2 id="about-h">About</h2>
-    <p>The seminar is organised by the thematic network <strong>RT LIFT2</strong> (Linguistique informatique, formelle et de terrain), previously the <span lang="fr">GdR</span> LIFT. It started in 2021 and has welcomed speakers from linguistics, natural language processing and cognitive science.</p>
-    <p>Organisers:
-      {% for o in site.organisers %}{{ o.name }} (<span class="email">{{ o.email }}</span>){% unless forloop.last %} and {% endunless %}{% endfor %}.
-    </p>
-  </section>
-</main>
-
-<footer class="wrap footer">
-  <p>ILFC seminar · RT LIFT2 · <a href="#upcoming">Upcoming</a> · <a href="#past">Past sessions</a> · <a href="{{ site.mailing_list }}">Mailing list</a> · <a href="https://brigap-workshop.github.io/">BriGap workshops</a></p>
-</footer>
+</html>
