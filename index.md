@@ -38,7 +38,7 @@ The seminar gave rise to BriGap (Bridges and Gaps between Formal and Computation
   Title: **Expanding the Linguistic Evaluation of Language Models, or: What to do now that LMs are good**  
   Abstract: *Linguistically motivated benchmarks of language models have been concerned with formalising a specific property of human language, developing a benchmark based on this formalisation, and then evaluating a language model to determine if it has learned this linguistic property. In this talk, I argue that for English, and for regular and frequent phenomena, language models have learned the phenomena with more nuance than the benchmarks can measure. This should have consequences for how we interpret their performance on these benchmarks, but more importantly, it opens up interesting new directions. We can extend linguistic evaluation to rare, irregular phenomena and low-resource languages, but also place an increased focus on linguistic interpretability with a view towards comparing their learning behaviour to competing linguistic theories, and suggesting expansions to those theories by using LMs as simulation models. I will share examples and insights from recent work in this direction, monolingually for the paired-focus and caused-motion constructions, as well as multilingually for subject-verb agreement and word order, and formulate what I think will be important directions in this area going forward.*
 
-*More past sessions soon (website under construction).*
+*More past sessions soon (website under reconstruction).*
 
 ### About
 
