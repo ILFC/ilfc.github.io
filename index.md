@@ -284,6 +284,4 @@ The seminar gave rise to BriGap (Bridges and Gaps between Formal and Computation
 
 ### About
 
-The seminar is organised by the RT LIFT2 (Linguistique informatique, formelle et de terrain), previously the GdR LIFT.
-
-Organisers: **Timothée BERNARD** (firstname.lastname@u-pariscite.fr) and **Grégoire WINTERSTEIN** (firstname.lastname@uqam.ca)
+The seminar is organised for the **RT LIFT2** (Linguistique informatique, formelle et de terrain), previously the GdR LIFT, by **Timothée BERNARD** (firstname.lastname@u-pariscite.fr) and **Grégoire WINTERSTEIN** (firstname.lastname@uqam.ca).
