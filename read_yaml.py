@@ -17,8 +17,9 @@ for talk in talks:
 	abstract = talk.get("abstract", "").strip().replace("\n", " ")
 
 	# Outputs.
-	print(f"- {date} {time}: {speakers}")
-	print(f"  Title: **{title}**")
-	if video: print(f"  {video}")
-	if slides: print(f"  {slides}")
+	print(f"- {date} {time}: {speakers}  ")
+	print(f"  Title: **{title}**  ")
+	if(video): print(f"  {video}  ")
+	if(slides): print(f"  {slides}  ")
+	print(f"  Abstract: *{abstract}*")
 	#print()
