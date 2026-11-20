@@ -91,6 +91,7 @@
     - name: "Jennifer Hu"
       affiliation: "Johns Hopkins University"
   title: "How to Know What Language Models Know"
+  video: https://uqam.ca.panopto.com/Panopto/Pages/Viewer.aspx?id=543516d4-4cb3-458c-b58e-b45000d2a4a7
   abstract: |
     As language models (LMs) become more sophisticated, there is growing interest in their cognitive abilities such as reasoning or grammatical generalization. However, we only have access to evaluations, which can only indirectly measure these latent constructs. In this talk, I take inspiration from the concept of “task demands” in cognitive science to design and understand LM evaluations. I will first describe how task demands can affect LMs’ behaviors. I will then present case studies showing how evaluations with different task demands can lead to vastly different conclusions about LMs’ abilities. Specifically, prompt-based evaluations (e.g., “Is the following sentence grammatical? [sentence]“) yield systematically lower performance than string probability comparisons, and smaller LMs are more sensitive to task demands than LMs with more parameters or training, mirroring findings in developmental psychology. Finally, I briefly outline a theoretical framework for using string probability to reveal grammaticality. These results underscore the importance of specifying the assumptions behind our evaluation design choices before we draw conclusions about LMs’ capabilities.
 
@@ -100,6 +101,7 @@
     - name: "Shu Okabe"
       affiliation: "Technische Universität München"
   title: "NLP Models for Field Linguistic Annotations in Computational Language Documentation"
+  video: https://uqam.ca.panopto.com/Panopto/Pages/Viewer.aspx?id=4a170a43-6429-4771-a68e-b42f00cd8943
   abstract: |
     More than half of the languages spoken today are considered to be endangered and may disappear by the end of the century. In this context, language documentation is a field of linguistics dedicated to the recording, annotation, and archival of language data. Since such annotations are primarily manual and require expert knowledge and time, computational language documentation aims to develop tools to assist linguists in several documentation steps using Natural Language Processing approaches. This presentation will focus on two of the tasks: (i) word segmentation to identify word boundaries in an unsegmented transcription of a recorded sentence and (ii) automatic interlinear glossing to predict linguistic annotations (glosses) for each word.
 
@@ -544,6 +546,7 @@
       affiliation: "University of Cambridge"
       local_time: "15:00-16:00 UTC+0"
   title: "Learning meaning in a logically structured model: An introduction to Functional Distributional Semantics"
+  video: https://uqam.ca.panopto.com/Panopto/Pages/Viewer.aspx?id=632620ab-4fbf-423f-9519-af6b0118b04d
   slides: slides/2022-12-14-emerson.pdf
   abstract: |
     The aim of distributional semantics is to design computational techniques that can automatically learn the meanings of words based on the contexts in which they are observed. The mainstream approach is to represent meanings as vectors (such as Word2Vec embeddings, or contextualised BERT embeddings). However, vectors do not provide a natural way to talk about basic concepts in logic and formal semantics, such as truth and reference. While there have been many attempts to extend vector space models to support such concepts, there does not seem to be a clear solution. In this talk, I will instead go back to fundamentals, questioning whether we should represent meaning as a vector.
