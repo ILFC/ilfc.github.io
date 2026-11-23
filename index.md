@@ -14,9 +14,6 @@ The seminar gave rise to BriGap (Bridges and Gaps between Formal and Computation
 
 ### Upcoming sessions
 
-- 2026/11/12 16:30-17:30 UTC+1: **Su Lin Blodgett** (Mila)  
-  Title: **Measurement and Disagreement in Equitable NLP**  
-  Abstract: *In this talk, I will discuss two challenges towards developing more equitable language technologies. First, I will discuss measurement—how do we meaningfully assess the capabilities we think technologies might exhibit or harms they might give rise to? I will describe several pieces of work investigating some of the complexities of deciding what benchmark datasets ought to measure and how they ought to measure it, and raise some questions about benchmarks’ appropriateness as measurement instruments. Second, I will discuss work showing that people’s expectations and preferences for system behaviours are varied and conflicting, highlighting the importance of taking into account people’s complex beliefs about language and technology.*
 - 2026/12/10 16:30-17:30 UTC+1: **Jonathan Ginzburg** (Université Paris Cité)  
   Title: **\[TBA\]**  
   Abstract: *\[TBA\]*
@@ -29,6 +26,10 @@ The seminar gave rise to BriGap (Bridges and Gaps between Formal and Computation
 
 ### Past sessions
 
+- 2026/11/12 16:30-17:30 UTC+1: **Su Lin Blodgett** (Mila)  
+  Title: **Measurement and Disagreement in Equitable NLP**  
+  [slides](slides/2026-11-12-blodgett.pdf)  
+  Abstract: *In this talk, I will discuss two challenges towards developing more equitable language technologies. First, I will discuss measurement—how do we meaningfully assess the capabilities we think technologies might exhibit or harms they might give rise to? I will describe several pieces of work investigating some of the complexities of deciding what benchmark datasets ought to measure and how they ought to measure it, and raise some questions about benchmarks’ appropriateness as measurement instruments. Second, I will discuss work showing that people’s expectations and preferences for system behaviours are varied and conflicting, highlighting the importance of taking into account people’s complex beliefs about language and technology.*
 - 2026/10/15 16:30-17:30 UTC+2: **Robin Ryder** (Imperial College London)  
   Title: **Bayesian methods for inferring the history of languages**  
   [video](https://uqam.ca.panopto.com/Panopto/Pages/Viewer.aspx?id=12ed3e5b-555b-4ef1-a37c-b4ea00d6cea0)  
